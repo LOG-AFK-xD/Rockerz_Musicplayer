@@ -32,65 +32,36 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/0d0cd252270861a6838ce.jpg",
-        caption=f"""**
-💥 ʜᴇʟʟᴏ, ɪ ᴀᴍ ʀᴏᴄᴋᴇʀᴢ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ᴄʀᴇᴀᴛᴇᴅ ʙʏ [ᴘᴇʀғᴇᴄᴛ sᴀʟɪᴍ](https://t.me/xmartperson)
-ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs ...""",
+        photo=f"https://telegra.ph/file/a9c008bacbb44f547639e.jpg",
+        caption=f"""<b>Hello Friends {message.from_user.mention} 😉️!</b>
+I'm The Ankit & Khushi Music Bot! A Powerful Bot to Play Music in Your Group Voice Chat 😇!
+
+POWERED BY- [ANKIT & KHUSHI](T.ME/ANKIT_KHUSHI) .""",
    reply_markup=InlineKeyboardMarkup(
             [
-                [
+                [                   
                     InlineKeyboardButton(
-                        "乂ᴀᴅᴅ ᴍᴇ ᴛᴏ ᴜʀ ɢʀᴏᴜᴘ乂",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                        "🔰️ Support 🔰️", url=f"https://t.me/UNIQUE_SOCIETY"
+                    ),
+                    InlineKeyboardButton(
+                        "⚜️ Channel ⚜️", url="https://t.me/ITZZ_OFFICIAL"
                     )
-                ],
-                [            
-                 InlineKeyboardButton  ("乂ᴄʀᴇᴀᴛᴇʀ乂", url=f"https://t.me/Xmartperson"),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "乂sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ乂", url=f"https://t.me/Rockerz_Support"
-                    ),
-                    InlineKeyboardButton(
-                        "乂ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "乂sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/BOTDUNIYA")
                 ]
-                
-           ]
-        ),
+            ]
+        )
     )
     
     
 @Client.on_message(commandpro(["/start", "/alive", "sᴀʟɪᴍ"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/0d0cd252270861a6838ce.jpg",
+        photo=f"https://telegra.ph/file/a9c008bacbb44f547639e.jpg",
         caption=f"""""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 ᴊᴏɪɴ ʜᴇʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/ROCKERZ_SUPPORT")
-                ]
-            ]
-        ),
-    )
-
-
-@Client.on_message(commandpro(["repo", "#repo", "@repo", "/repo", "source"]) & filters.group & ~filters.edited)
-async def help(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/0d0cd252270861a6838ce.jpg",
-        caption=f"""""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "💥 ᴄʟɪᴄᴋ ᴍᴇ ᴛᴏ ɢᴇᴛ ʀᴇᴘᴏ 💞", url=f"https://github.com/S780821/Rockerz_Musicplayer")
+                        "✦ Join Here And Support ✦", url=f"https://t.me/UNIQUE_SOCIETY")
                 ]
             ]
         ),
